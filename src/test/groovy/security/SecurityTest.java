@@ -90,10 +90,6 @@ public class SecurityTest extends SecurityTestSupport {
         assertExecute(new File("src/test/groovy/script/ScriptTest.groovy"), null);
     }
 
-    public void testConstructorBug() {
-        assertExecute(new File("src/test/groovy/bugs/ConstructorBug.groovy"), null);
-    }
-
     //Mailing list post by Richard Hensley reporting a CodeSource bug.  A GroovyCodeSource created
     //with a URL was causing an NPE.
     public void testCodeSource() throws IOException, CompilationFailedException {
