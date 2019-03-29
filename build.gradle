@@ -55,8 +55,8 @@ plugins {
 }
 
 buildScan {
-    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
-    apply from: 'gradle/build-scans.gradle'
+    server = System.getenv("GE_URL")
+    publishAlways()
 }
 
 buildScanRecipes {

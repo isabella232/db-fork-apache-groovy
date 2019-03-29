@@ -59,3 +59,5 @@ rootProject.children.each { prj ->
 }
 
 rootProject.name = 'groovy' // TODO should this be groovy-core?
+
+apply from: "gradle/buildCache.gradle"
